@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+    <script type="text/javascript">
+        function showmsg() {
+            var str = document.getElementById("announc").value;
+            alert("Your slot is Successfully Booked!!" + str);
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1>Choose Your Slot:</h1> <br> Date:
+        <input type="date" /><br> Time:
+        <input type="time" /><br> Announcement: <input type="text" name="announcement" id="announc" /><br>
+        <input type="button" value="Save" onclick="showmsg()" />
+        <input type="reset" value="Clear All">
+    </form>
+</body>
+
+</html>
